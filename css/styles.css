@@ -267,7 +267,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
 }
 
@@ -323,7 +323,6 @@ body {
 .lorem {
   box-sizing: border-box;
   margin-right: 30px;
-
   width: 270px;
   border-block: 1px;
 }
@@ -435,6 +434,7 @@ body {
 
 .logo-icon:hover {
   fill: var(--main-blue);
+  border: 1px solid var(--main-blue);
 }
 
 .logo-icon:focus {
