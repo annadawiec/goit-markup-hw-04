@@ -280,8 +280,8 @@ body {
 }
 
 .lorem-tittle {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .tittle {
@@ -323,19 +323,18 @@ body {
 .lorem {
   box-sizing: border-box;
   margin-right: 30px;
-  background-color: var(--team-background);
-  width: 270px;
-  height: 120px;
-  border-block: 1px;
-}
 
-.lorem-icon {
-  margin-left: 100px;
-  margin-top: 25px;
+  width: 270px;
+  border-block: 1px;
 }
 
 .lorem-figure {
   margin: 0;
+  background-color: var(--team-background);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* CSS for FOOTER below*/
