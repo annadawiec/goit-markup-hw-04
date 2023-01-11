@@ -141,6 +141,14 @@ body {
   background-color: var(--main-blue);
   color: var(--team-background);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projects-type:focus {
+  background-color: var(--main-blue);
+  color: var(--team-background);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-name {
@@ -267,6 +275,13 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: var(--contact-color);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.lorem-tittle {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .tittle {
@@ -298,7 +313,7 @@ body {
 
 .figcaption {
   padding-top: 30px;
-  mardin-right: 0;
+  margin-right: 0;
 }
 
 .scope {
@@ -306,8 +321,21 @@ body {
 }
 
 .lorem {
+  box-sizing: border-box;
   margin-right: 30px;
-  justify-content: center;
+  background-color: var(--team-background);
+  width: 270px;
+  height: 120px;
+  border-block: 1px;
+}
+
+.lorem-icon {
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+.lorem-figure {
+  margin: 0;
 }
 
 /* CSS for FOOTER below*/
@@ -381,6 +409,14 @@ body {
   gap: 30px;
   padding: 0;
   list-style: none;
+}
+
+.item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .filter-buttons {
