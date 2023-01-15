@@ -70,20 +70,14 @@
 .header-logo > .logo {
   width: 145px; /* CSS for HEADER */
   height: 31px;
-  padding-left: 0;
 }
 
 .nav-menu {
   display: flex; /* CSS for HEADER */
   flex: 1;
-  padding: 32px 0px 32px 93px;
 }
 
-.nav-menu > .lista:not(:last-child) {
-  /* CSS for HEADER */
-  margin-right: 46px;
-  flex: 1;
-}
+/* CSS for HEADER */
 
 .lista {
   gap: 46px;
@@ -96,7 +90,7 @@
   line-height: 1.17;
   color: var(--main-color); /* CSS for HEADER */
   justify-content: space-between;
-  padding: 32px 0px 32px 93px;
+  padding-left: 93px;
 }
 
 .web-navigation:hover {
@@ -109,12 +103,21 @@
   font-size: 14px; /* CSS for HEADER */
   line-height: 16.41px;
   text-decoration: none;
-  padding-left: 371px;
+  padding-top: 32px;
   font-weight: 500;
 }
 
 .header-email:hover {
   color: var(--main-blue);
+}
+
+.header-email:focus {
+  color: var(--main-blue);
+}
+
+.header-email:hover svg,
+.header-email:focus svg {
+  fill: var(--main-blue);
 }
 
 .header-phone {
@@ -131,20 +134,20 @@
   color: var(--main-blue);
   margin-top: 34px;
 }
+
+.header-phone:hover svg,
+.header-phone:focus svg {
+  fill: var(--main-blue);
+}
+
 .envelope {
   margin-right: 10px;
   fill: var(--contact-color);
 }
+
 .smartphone {
   margin-right: 10px;
   fill: var(--contact-color);
-}
-
-.envelope:hover {
-  fill: var(--main-blue);
-}
-.smartphone:hover {
-  fill: var(--main-blue);
 }
 
 /* CSS for HEADER above*/
@@ -518,4 +521,59 @@ body {
 
 .footer-list {
   display: inline;
+}
+.icon-footer {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: var(--logo-color); /*kolor*/
+}
+
+.list-footer {
+  display: flex;
+  list-style-type: none;
+}
+
+.join-sm {
+  font-weight: 700px;
+  font-size: 14px;
+}
+
+.list-sm-footer {
+  list-style-type: none;
+  display: flex;
+  gap: 22px;
+  padding-left: 0;
+  margin-top: 20px;
+  gap: 10px;
+  cursor: pointer;
+}
+.social-media-footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-item-footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.social-item-footer:hover,
+.social-item-footer:focus {
+  background-color: var(--main-blue);
+}
+
+.social-item-footer:hover svg,
+.ssocial-item-footer:focus svg {
+  fill: var(--main-background);
+}
+
+.join-us {
+  margin-left: 70px;
+  margin-top: 72px;
 }
